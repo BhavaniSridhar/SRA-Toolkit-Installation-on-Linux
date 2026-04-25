@@ -2,7 +2,7 @@ SRA Toolkit is a set of command-line tools developed by NCBI to download and pro
 
 ---
 
-## 📥 Step 1: Download SRA Toolkit
+## Step 1: Download SRA Toolkit
 
 ```bash
 cd ~/Downloads
@@ -11,7 +11,7 @@ wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubunt
 
 ---
 
-## 📦 Step 2: Extract the file
+## Step 2: Extract the file
 
 ```bash
 tar -xvzf sratoolkit.current-ubuntu64.tar.gz
@@ -19,7 +19,7 @@ tar -xvzf sratoolkit.current-ubuntu64.tar.gz
 
 ---
 
-## 📁 Step 3: Move to /opt directory
+## Step 3: Move to /opt directory
 
 ```bash
 sudo mv sratoolkit.* /opt/sratoolkit
@@ -27,7 +27,7 @@ sudo mv sratoolkit.* /opt/sratoolkit
 
 ---
 
-## ⚙️ Step 4: Add to PATH
+## Step 4: Add to PATH
 
 ```bash
 echo 'export PATH=$PATH:/opt/sratoolkit/bin' >> ~/.bashrc
@@ -36,7 +36,7 @@ source ~/.bashrc
 
 ---
 
-## ✅ Step 5: Verify installation
+## Step 5: Verify installation
 
 ```bash
 vdb-config --version
@@ -44,7 +44,7 @@ vdb-config --version
 
 ---
 
-## 🔧 Step 6: Configure SRA Toolkit
+## Step 6: Configure SRA Toolkit
 
 ```bash
 vdb-config --interactive
@@ -55,7 +55,7 @@ vdb-config --interactive
 
 ---
 
-## 🚀 Step 7: Test download
+## Step 7: Test download
 
 ```bash
 prefetch SRR000001
@@ -63,54 +63,12 @@ prefetch SRR000001
 
 ---
 
-## 🔄 Convert SRA to FASTQ
+## Convert SRA to FASTQ
 
 ```bash
 fasterq-dump SRR000001
 ```
 
----
-
-## ⚠️ Common Errors
-
-### ❌ Command not found
-
-* Ensure PATH is set correctly
-* Restart terminal or run `source ~/.bashrc`
-
-### ❌ Extraction failed
-
-* Use correct command:
-
-```bash
-tar -xvzf filename.tar.gz
-```
-
-### ❌ Permission denied
-
-* Use `sudo` for system folders like `/opt`
-
----
-
-## 📂 Recommended Folder Structure
-
-```bash
-mkdir ~/sra_data
-cd ~/sra_data
-```
-
----
-
-## 🧠 Notes
-
-* Works on Ubuntu, Debian, and most Linux distributions
-* Only needs to be configured once
-
----
-
-## 📌 Author
-
-Your Name
 
 ```
-```
+
